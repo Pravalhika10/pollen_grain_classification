@@ -1,0 +1,49 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #8bc34a;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      align-items: center;
+    }
+    .banner {
+      margin-top: 70px;
+      background-image: url('images/Lavender.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h3 {
+      border-bottom: 3px solid #8bc34a;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }

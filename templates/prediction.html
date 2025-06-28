@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollen Grain Classification Result</title>
+  <link rel="stylesheet" href="static/css/img.css">
+<div class="navbar">
+  <h1>A Pollen Grain Classification</h1>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+<div class="result-section">
+  <div class="upload-box">
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="submitImage()">Submit</button>
+  </div>
+
+  <div class="result-text" id="result">
+    The pollen grain type is <strong>arecaceae</strong>
+  </div>
+</div>
+
+<script>
+  function submitImage() {
+    const resultDiv = document.getElementById("result");
+
+    const fakeResults = ['anadenanthera', 'arecaceae', 'arrabidaea', 'cecropia', 'chromolaena', 'combretum', 'croton', 'dipetryx', 'eucalipto', 'faramea', 'hyptis', 'mabea', 'matayba', 'mimosa', 'myrcia', 'protium', 'qualea', 'schinus', 'senegalia', 'serjania', 'syagrus', 'tridax', 'urochloa'];
+    const randomResult = fakeResults[Math.floor(Math.random() * fakeResults.length)];
+    resultDiv.innerHTML = "The pollen grain type is <strong>" + randomResult + "</strong>";
+  }
+</script>
+
+</body>
+</html>
